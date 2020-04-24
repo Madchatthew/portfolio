@@ -3,7 +3,10 @@
   }
 
   .masthead.segment {
-    min-height: 700px;
+    /* min-height: 700px; */
+    height: 100vh;
+    background-image: url("images/sitkabridge.jpg");
+    background-size: cover;
     padding: 1em 0em;
   }
   .masthead .logo.item img {
