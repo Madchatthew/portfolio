@@ -5,8 +5,10 @@
   .masthead.segment {
     /* min-height: 700px; */
     height: 100vh;
-    background-image: url("../images/sitkabridge.jpg") !important;
+    background-image: url("../images/alaskamountain.jpg") !important;
     background-size: cover !important;
+    background-repeat: no-repeat !important;
+    background-position: center !important;
     padding: 1em 0em;
   }
   .masthead .logo.item img {
@@ -72,7 +74,16 @@
   }
 
   #get-started {
+    background-color: #3a415d;
     margin-top: 3rem;
+  }
+
+  #menu-site {
+    color: black !important;
+  }
+  
+  #menu-site a {
+    color: black !important;
   }
 
   @media only screen and (max-width: 700px) {
