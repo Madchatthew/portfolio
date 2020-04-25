@@ -5,8 +5,8 @@
   .masthead.segment {
     /* min-height: 700px; */
     height: 100vh;
-    background-image: url("images/sitkabridge.jpg");
-    background-size: cover;
+    background-image: url("../images/sitkabridge.jpg") !important;
+    background-size: cover !important;
     padding: 1em 0em;
   }
   .masthead .logo.item img {
@@ -62,6 +62,19 @@
     display: none;
   }
 
+  #header {
+
+  }
+
+  #secondary-header {
+    color: black;
+    font: bold;
+  }
+
+  #get-started {
+    margin-top: 3rem;
+  }
+
   @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
       display: none !important;
@@ -74,7 +87,9 @@
       display: block;
     }
     .masthead.segment {
-      min-height: 350px;
+      height: 100vh;
+      background-image: url("../images/sitkabridge.jpg") !important;
+      background-size: cover !important;
     }
     .masthead h1.ui.header {
       font-size: 2em;
