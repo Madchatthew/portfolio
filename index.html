@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
 
     <!-- Site Properties -->
-    <title>Homepage - Semantic</title>
+    <title>Chad Jessen's Portfolio</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css">
     <link rel="stylesheet" href="styles/style.css">
 
@@ -23,8 +23,9 @@
             <a href="#menu-area" class="item">Home</a>
             <a href="#about" class="item">About</a>
             <a href="#projects" class="item">Projects</a>
-            <a class="item">Profiles</a>
-            <a class="item">Contact</a>
+            <a href="#profiles" class="item">Profiles</a>
+            <a href="#contact" class="item">Contact</a>
+            <a href="version-1" class="right item" target="_blank">See Version 1.0</a>
         </div>
     </div>
 
@@ -34,8 +35,9 @@
         <a href="#menu-area" class="active item">Home</a>
         <a href="about" class="item">About</a>
         <a href="#projects" class="item">Projects</a>
-        <a class="item">Profiles</a> 
-        <a class="item">Contact</a> 
+        <a href="#profiles" class="item">Profiles</a> 
+        <a href="#contact" class="item">Contact</a> 
+        <a href="version-1" class="right item" target="_blank">See Version 1.0</a>
     </div>
 
     <!-- Page Contents -->
@@ -51,10 +53,9 @@
                     <a class="active item">Home</a>
                     <a href="#about" class="item">About</a>
                     <a href="#projects" class="item">Projects</a>
-                    <a class="item">Profiles</a>
-                    <a class="item">Contact</a>
-                    <!-- <div class="right item">
-                    </div> -->
+                    <a href="#profiles" class="item">Profiles</a>
+                    <a href="#contact" class="item">Contact</a>
+                    <a href="version-1" class="right item" target="_blank">See Version 1.0</a>
                 </div>
             </div>
 
@@ -72,13 +73,34 @@
             <div class="ui middle aligned stackable grid container">
                 <div class="row">
                     <div class="eight wide column">
-                        <h3 class="ui header">About Me</h3>
-                        <p>About me paragraph/pharagraphs will go here.</p>
-                        <h3 class="ui header">We Make Bananas That Can Dance</h3>
-                        <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
+                        
+                      <h3 id="aboutme-header" class="ui header">About Me</h3>
+                        <p>I am a web developer. I have over 20 years of experience in Computer Repair and IT Support/Administration. Currently I am a Travel Registered Nurse
+                          who has re-kindled a passion for Web Development. I started learning new programing languages, which has shown me how much I love programming. Now
+                          it is time to take that passion to the next level by becoming a full-time Web Developer. Enjoyment is found in eaither coming up with a new idea and
+                          making it come to life, or taking something already created and improving or changing the functionality.
+                        </p>
+
+                        <p>Throughout my life, I have always loved working on websites and helping others to acheive their online goals. These goals range from being able to
+                          blog, to selling merchandise on the internet. Whether I find myself in Alaska, Virginia, South Dakota or back in Minnesota, I love to create and
+                          help indiviuals or businesses see their online ideas come to fruition.
+                        </p>
+
+                        <h3 id="aboutme-header" class="ui header">More Background</h3>
+                        <p>Over that last three and a half years my family and I have had the opportunity to travel around the United States. My first Travel Nursing contract
+                          brought us to be able to spend time in two different locations in Alaska. The first being Dillingham, then Sitka. Both places were amazing and we are
+                          hoping to be able to go back to visit some day. Other Travel Nursing opportunities have provided us to travel to South Dakota where we were able to
+                          experience all of the tourists attractions, along with Custard State Park, the Needles Highway, Mount Rushmoore and the beautiful Badlands.
+                        </p>
+
+                        <p>My family, which consists of my Wife and Daughter, were able to spend about a year in Virginia. This was the fist time I have ever been to the east
+                          coast. It was very beautiful and being able to travel to the ocean and dig up fossils along the sandy shores was amazing. We have enjoyed Travel
+                          Nursing and all of the experiences that we have experienced. We are getting ready to settle down, and with over six years in Nursing, I am looking
+                          forward to following my passion for being a Web Developer. I continue to look forward to the challenges, the successes and the never ending learning.
+                        </p>
                     </div>
                         <div class="six wide right floated column">
-                        <img src="assets/images/wireframe/white-image.png" class="ui large bordered rounded image">
+                        <img src="images/purplestarfish.jpg" class="ui large bordered rounded image">
                     </div>
                 </div>
                 <div class="row">
@@ -96,9 +118,8 @@
 
             <div class="card">
               <div class="">
-                <img width="100%" height="265" src="https://raw.githubusercontent.com/Madchatthew/themelightshadow/Master/screenshots/screenshot1.jpg">
+                <img width="100%" height="225px" src="https://raw.githubusercontent.com/Madchatthew/themelightshadow/Master/screenshots/screenshot1.jpg">
               </div>
-
               <div class="content">
                 <div class="header">
                   <a href="https://github.com/Madchatthew/themelightshadow" target="_blank">Theme Light Shadow</a>
@@ -106,75 +127,60 @@
                 <div class="description">
                   Theme extension created for a project called Flarum.io, which is a modern community forums. Flarum requires Composer to install. Node and NPM is required to created extensions. Github is used for version control. 
                 </div>
-              </div>
-              </a>
             </div>
+          </div>
 
             <div class="card">
               <div class="">
-                <img width="100%" height="265" src="images/whatsonyourscrubs.png">
+                <img width="100%" height="225px" src="images/whatsonyourscrubs.png">
               </div>
-
               <div class="content">
                 <div class="header">
                   <a href="https://whatsonyourscrubs.com" target="_blank">whatsonyourscrubs.com</a>
                 </div>
                 <div class="description">
-                  This site was created using Flarum. This site is located on a Digitalocean droplet. This droplet is a virtual server that runs Ubuntu Server 18.04. I remotely update the server and maintain backups for recovery if the occasion every arises. Nnginx, PHP7.4, Mariadb are currently running on this server.
+                  Whatsonyourscrubs.com was created using Flarum. It is located on a Digitalocean droplet, which is a virtual server that runs Ubuntu Server 18.04. Updates to the server and site are completed remotely. Currently this server is running Nnginx, PHP7.4 and Mariadb.
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="">
-                <img width="100%" height="265" src="images/grandforkschurch.png">
+                <img width="100%" height="225px" src="images/grandforkschurch.png">
+              </div>
+              <div class="content">
+                <div class="header">
+                  <a href="https://grandforkschurch.com">Grandforkschurch.com</a>
+                </div>
+                <div class="description">
+                  Grandforkschurch.com was setup using wordpress. The theme in use was customized for appearance and functionality. Grandforkschurch.com is hosted on Siteground. Control of the site was handed off to a church member in 2017.
+                </div>
+              </div>
+            </div>
+
+            <div class="card">
+              <div class="">
+                <img width="100%" height="225px" src="images/nordvickarms.png">
               </div>
 
               <div class="content">
                 <div class="header">
-                  <a href="https://grandforkschurch.com">Grand Forks Seventh-Day Adventist Church</a>
+                  <a href="https://nordvickarms.com" taget="_blank">Nordvickarms.com</a>
                 </div>
                 <div class="description">
-                  I setup this site using wordpress. Although this theme was created by someone else, I have customized it to look as it does and fucntion for the church. This site is being hosted on Siteground.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="image">
-                <img src="/images/avatar2/large/matthew.png">
-              </div>
-
-              <div class="content">
-                <div class="header">Matt Giampietro</div>
-                <div class="description">
-                  Matthew is an interior designer living in New York.
+                  Nordvickarms includes woocommerce for the sales of products. The owner is able to use blogposts for "Latest News" section. Currently the inventory database is updated via a CSV file. API imports will be added soon. I currently update and maintain the site. Nordvickarms is hosted on Siteground.
                 </div>
               </div>
             </div>
 
             <div class="card">
               <div class="image">
-                <img src="/images/avatar2/large/matthew.png">
+                <img width="100%" height="225px" src="images/hollyjessen.png">
               </div>
-
               <div class="content">
-                <div class="header">Matt Giampietro</div>
+                <div class="header">Hollyjessen.com</div>
                 <div class="description">
-                  Matthew is an interior designer living in New York.
-                </div>
-              </div>
-            </div>
-
-            <div class="card">
-              <div class="image">
-                <img src="/images/avatar2/large/matthew.png">
-              </div>
-
-              <div class="content">
-                <div class="header">Matt Giampietro</div>
-                <div class="description">
-                  Matthew is an interior designer living in New York.
+                  Hollyjessen.com was setup using wordpress and a theme which was customized for appearance and functionality. 
                 </div>
               </div>
             </div>
@@ -182,45 +188,62 @@
           </div>
         </div>
 
-        <div class="ui vertical stripe segment">
-            <div class="ui text container">
-            <h3 class="ui header">Breaking The Grid, Grabs Your Attention</h3>
-            <p>Instead of focusing on content creation and hard work, we have learned how to master the art of doing nothing by providing massive amounts of whitespace and generic content that can seem massive, monolithic and worth your attention.</p>
-            <a class="ui large button">Read More</a>
-            <h4 class="ui horizontal header divider">
-                <a href="#">Case Studies</a>
-            </h4>
-            <h3 class="ui header">Did We Tell You About Our Bananas?</h3>
-            <p>Yes I know you probably disregarded the earlier boasts as non-sequitur filler content, but its really true. It took years of gene splicing and combinatory DNA research, but our bananas can really dance.</p>
-            <a class="ui large button">I'm Still Quite Interested</a>
+        <!-- Profiles Section -->
+
+        <div id="profiles" class="ui vertical stripe segment">
+            <div class="ui eight column grid container">
+            <h3 id="profile-header" class="ui eight column row centered header">Profiles</h3>
+            
+            <div class="ui eight column row centered">
+              <a href="https://github.com/Madchatthew" target="_blank" id="profile-links">
+                <img width="15%" src="../images/GitHub_Logo_White.png" alt="Github Profile">
+              </a>
             </div>
+            
+            <div class="ui eight column row centered">
+              <a href="https://codepen.io/Madchatthew" target="_blank">
+                <img width="20%" src="../images/codepen.png" alt="Codepen Profile">
+              </a>
+            </div>
+        </div>
         </div>
 
 
-        <div class="ui inverted vertical footer segment">
+        <div id="contact" class="ui vertical footer segment">
             <div class="ui container">
-            <div class="ui stackable inverted divided equal height stackable grid">
+            <div class="ui stackable divided equal height stackable grid">
                 <div class="three wide column">
-                <h4 class="ui inverted header">About</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">Sitemap</a>
-                    <a href="#" class="item">Contact Us</a>
-                    <a href="#" class="item">Religious Ceremonies</a>
-                    <a href="#" class="item">Gazebo Plans</a>
+                <h4 class="ui header">Front End</h4>
+                <div class="ui link list">
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/HTML" class="item" target="_blank">HTML5</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS" class="item" target="_blank">CSS</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" class="item" target="_blank">Javascript</a>
+                </div>
+                <h4 class="ui header">Front End Frameworks</h4>
+                <div class="ui link list">    
+                    <a href="https://getbootstrap.com/" class="item" target="_blank">Bootstrap</a>
+                    <a href="https://semantic-ui.com/" class="item" target="_blank">Semantic-ui</a>
                 </div>
                 </div>
                 <div class="three wide column">
-                <h4 class="ui inverted header">Services</h4>
-                <div class="ui inverted link list">
-                    <a href="#" class="item">Banana Pre-Order</a>
-                    <a href="#" class="item">DNA FAQ</a>
-                    <a href="#" class="item">How To Access</a>
-                    <a href="#" class="item">Favorite X-Men</a>
+                <h4 class="ui header">Backend</h4>
+                <div class="ui link list">
+                    <a href="#" class="item">Nginx</a>
+                    <a href="#" class="item">Apache2</a>
+                    <a href="#" class="item">Node</a>
+                    <a href="#" class="item">NPM</a>
+                    <a href="#" class="item">PHP</a>
+                </div>
+                <h4 class="ui header">Backend Frameworks</h4>
+                <div class="ui link list">
+                    <a href="#" class="item">Express</a>
+                    <a href="#" class="item">EJS</a>
+                    <a href="#" class="item">Mongodb</a>
                 </div>
                 </div>
                 <div class="seven wide column">
-                <h4 class="ui inverted header">Footer Header</h4>
-                <p>Extra space for a call to action inside the footer that could help re-engage users.</p>
+                <h4 class="ui header">Contact</h4>
+                <p>You can contact me by <a href="mailto:chad.jessen@gmail.com">Email</a> at any time.</p>
                 </div>
             </div>
             </div>

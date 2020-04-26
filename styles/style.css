@@ -91,16 +91,39 @@
     color: black !important;
   }
 
+  #menu-items {
+    width: 75%;
+  }
+
   .ui.menu {
     border: none !important;
   }
 
   #about {
     height: 100vh;
+    background-color: black;
+    color: white;
+  }
+
+  #aboutme-header {
+    color: white;
   }
 
   #projects {
-    /* height: 100vh; */
+    height: 100vh;
+  }
+
+  #profiles {
+    height: 100vh;
+    background-color: black;
+  }
+
+  #profile-header {
+    color: white;
+  }
+
+  #contact {
+    height: 100vh;
   }
 
   /* End Custom Code */
@@ -118,7 +141,7 @@
     }
     .masthead.segment {
       height: 100vh;
-      background-image: url("../images/sitkabridge.jpg") !important;
+      background-image: url("../images/alaskamountain.jpg") !important;
       background-size: cover !important;
     }
     .masthead h1.ui.header {
