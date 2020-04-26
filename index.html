@@ -18,57 +18,62 @@
 
     <!-- Following Menu -->
     <div class="ui large top fixed hidden menu">
-        <div id="menu-site" class="ui container">
+        <div id="menu-following" class="ui container">
             <div class="ui black header item">Chad Jessen's Portfolio</div>
-            <a class="item">Home</a>
-            <a class="item">Work</a>
-            <a class="item">Company</a>
-            <a class="item">Careers</a>
+            <a href="#menu-area" class="item">Home</a>
+            <a href="#about" class="item">About</a>
+            <a href="#projects" class="item">Projects</a>
+            <a class="item">Profiles</a>
+            <a class="item">Contact</a>
         </div>
     </div>
 
     <!-- Sidebar Menu -->
-    <div id="menu-site" class="ui vertical inverted sidebar menu">
+    <div id="menu-sidebar" class="ui vertical inverted sidebar menu">
         <div class="ui black header item">Chad Jessen's Portfolio</div>
-        <a class="active item">Home</a>
-        <a class="item">Work</a>
-        <a class="item">Company</a>
-        <a class="item">Careers</a> 
+        <a href="#menu-area" class="active item">Home</a>
+        <a href="about" class="item">About</a>
+        <a href="#projects" class="item">Projects</a>
+        <a class="item">Profiles</a> 
+        <a class="item">Contact</a> 
     </div>
 
     <!-- Page Contents -->
-    <div class="pusher">
+    <div id="menu-area" class="pusher">
         <div class="ui inverted vertical masthead center aligned segment">
 
             <div id="menu-site" class="ui container">
-                <div class="ui large secondary inverted pointing menu">
+                <div id="menu-items" class="ui large secondary inverted pointing borderless menu">
                     <a class="toc item">
                     <i class="sidebar icon"></i>
                     </a>
                     <!-- <div id="menu-site" class="ui header item">Chad Jessen's Portfolio</div> -->
                     <a class="active item">Home</a>
-                    <a class="item">Work</a>
-                    <a class="item">Company</a>
-                    <a class="item">Careers</a>
-                    <div class="right item">
-                    </div>
+                    <a href="#about" class="item">About</a>
+                    <a href="#projects" class="item">Projects</a>
+                    <a class="item">Profiles</a>
+                    <a class="item">Contact</a>
+                    <!-- <div class="right item">
+                    </div> -->
                 </div>
             </div>
 
             <div id="header" class="ui text container">
                 <h1 id="header" class="ui header">Chad Jessen's Portfolio</h1>
                 <h2 id="secondary-header">I am a bearded web developer!</h2>
-                <div id="get-started" class="ui huge primary button">Get Started <i class="right arrow icon"></i></div>
+                <a href="#about"><div id="get-started" class="ui huge primary button">Get Started <i class="right arrow icon"></i></div></a>
             </div>
 
         </div>
 
-        <div class="ui vertical stripe segment">
+        <!-- About Me Section -->
+
+        <div id="about" class="ui vertical stripe segment">
             <div class="ui middle aligned stackable grid container">
                 <div class="row">
                     <div class="eight wide column">
-                        <h3 class="ui header">We Help Companies and Companions</h3>
-                        <p>We can give your company superpowers to do things that they never thought possible. Let us delight your customers and empower your needs...through pure data analytics.</p>
+                        <h3 class="ui header">About Me</h3>
+                        <p>About me paragraph/pharagraphs will go here.</p>
                         <h3 class="ui header">We Make Bananas That Can Dance</h3>
                         <p>Yes that's right, you thought it was the stuff of dreams, but even bananas can be bioengineered.</p>
                     </div>
@@ -84,22 +89,149 @@
             </div>
         </div>
 
+        <!-- Projects Section -->
 
-        <div class="ui vertical stripe quote segment">
-            <div class="ui equal width stackable internally celled grid">
-                <div class="center aligned row">
-                        <div class="column">
-                            <h3>"What a Company"</h3>
-                            <p>That is what they all say about us</p>
-                        </div>
-                        <div class="column">
-                            <h3>"I shouldn't have gone with their competitor."</h3>
-                        <p>
-                            <img src="assets/images/avatar/nan.jpg" class="ui avatar image"> <b>Nan</b> Chief Fun Officer Acme Toys
-                        </p>
-                    </div>
+        <div id="projects" class="ui vertical stripe segment">
+        <div class="ui link four column centered cards">
+            <div class="card">
+              <div class="image">
+                <img src="/images/avatar2/large/matthew.png">
+              </div>
+              <div class="content">
+                <div class="header">Matt Giampietro</div>
+                <div class="meta">
+                  <a>Friends</a>
                 </div>
+                <div class="description">
+                  Matthew is an interior designer living in New York.
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="right floated">
+                  Joined in 2013
+                </span>
+                <span>
+                  <i class="user icon"></i>
+                  75 Friends
+                </span>
+              </div>
             </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/avatar2/large/molly.png">
+              </div>
+              <div class="content">
+                <div class="header">Molly</div>
+                <div class="meta">
+                  <span class="date">Coworker</span>
+                </div>
+                <div class="description">
+                  Molly is a personal assistant living in Paris.
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="right floated">
+                  Joined in 2011
+                </span>
+                <span>
+                  <i class="user icon"></i>
+                  35 Friends
+                </span>
+              </div>
+            </div>
+            <div class="card">
+              <div class="image">
+                <img src="/images/avatar2/large/elyse.png">
+              </div>
+              <div class="content">
+                <div class="header">Elyse</div>
+                <div class="meta">
+                  <a>Coworker</a>
+                </div>
+                <div class="description">
+                  Elyse is a copywriter working in New York.
+                </div>
+              </div>
+              <div class="extra content">
+                <span class="right floated">
+                  Joined in 2014
+                </span>
+                <span>
+                  <i class="user icon"></i>
+                  151 Friends
+                </span>
+              </div>
+            </div>
+            <div class="card">
+                <div class="image">
+                  <img src="/images/avatar2/large/matthew.png">
+                </div>
+                <div class="content">
+                  <div class="header">Matt Giampietro</div>
+                  <div class="meta">
+                    <a>Friends</a>
+                  </div>
+                  <div class="description">
+                    Matthew is an interior designer living in New York.
+                  </div>
+                </div>
+                <div class="extra content">
+                  <span class="right floated">
+                    Joined in 2013
+                  </span>
+                  <span>
+                    <i class="user icon"></i>
+                    75 Friends
+                  </span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="/images/avatar2/large/molly.png">
+                </div>
+                <div class="content">
+                  <div class="header">Molly</div>
+                  <div class="meta">
+                    <span class="date">Coworker</span>
+                  </div>
+                  <div class="description">
+                    Molly is a personal assistant living in Paris.
+                  </div>
+                </div>
+                <div class="extra content">
+                  <span class="right floated">
+                    Joined in 2011
+                  </span>
+                  <span>
+                    <i class="user icon"></i>
+                    35 Friends
+                  </span>
+                </div>
+              </div>
+              <div class="card">
+                <div class="image">
+                  <img src="/images/avatar2/large/elyse.png">
+                </div>
+                <div class="content">
+                  <div class="header">Elyse</div>
+                  <div class="meta">
+                    <a>Coworker</a>
+                  </div>
+                  <div class="description">
+                    Elyse is a copywriter working in New York.
+                  </div>
+                </div>
+                <div class="extra content">
+                  <span class="right floated">
+                    Joined in 2014
+                  </span>
+                  <span>
+                    <i class="user icon"></i>
+                    151 Friends
+                  </span>
+                </div>
+              </div>
+          </div>
         </div>
 
         <div class="ui vertical stripe segment">

@@ -64,6 +64,8 @@
     display: none;
   }
 
+  /* Start of Custom code */
+
   #header {
 
   }
@@ -79,12 +81,29 @@
   }
 
   #menu-site {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
     color: black !important;
   }
   
   #menu-site a {
     color: black !important;
   }
+
+  .ui.menu {
+    border: none !important;
+  }
+
+  #about {
+    height: 100vh;
+  }
+
+  #projects {
+    /* height: 100vh; */
+  }
+
+  /* End Custom Code */
 
   @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
