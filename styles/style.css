@@ -116,10 +116,16 @@
   #profiles {
     height: 100vh;
     background-color: black;
+    color: white;
+  }
+
+  #profiles a {
+    color: white;
   }
 
   #profile-header {
     color: white;
+    text-transform: uppercase;
   }
 
   #contact {
@@ -138,6 +144,7 @@
     }
     .secondary.pointing.menu .toc.item {
       display: block;
+      position: fixed;
     }
     .masthead.segment {
       height: 100vh;
@@ -151,6 +158,27 @@
     .masthead h2 {
       margin-top: 0.5em;
       font-size: 1.5em;
+    }
+    #see-version {
+      display: none;
+    }
+    #about {
+      height: auto;
+    }
+  
+    #projects {
+      height: auto;
+    }
+  
+    #profiles {
+      height: auto;
+    }
+  
+    #contact {
+      height: auto;
+    }
+    .ui.fixed.menu {
+      display: none;
     }
   }
 
