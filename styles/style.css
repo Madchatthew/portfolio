@@ -145,6 +145,7 @@
     .secondary.pointing.menu .toc.item {
       display: block;
       position: fixed;
+      z-index: 1;
     }
     .masthead.segment {
       height: 100vh;
