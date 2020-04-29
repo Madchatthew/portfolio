@@ -6,14 +6,14 @@ $(document)
     .visibility({
       once: false,
       onBottomPassed: function() {
-        $('.fixed.menu').transition('fade in');
+        $('.top.menu').transition('fade in');
       },
       onBottomPassedReverse: function() {
-        $('.fixed.menu').transition('fade out');
+        $('.top.menu').transition('fade out');
       }
     });
 
   // create sidebar and attach to menu open
-  $('.ui.sidebar')
-    .sidebar('attach events', '.toc.item');
+  // $('.ui.icon')
+  //   .sidebar('attach events', '.icon.menu');
 });

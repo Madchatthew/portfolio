@@ -110,7 +110,7 @@
   }
 
   #projects {
-    height: 100vh;
+    height: auto;
   }
 
   #profiles {
@@ -129,24 +129,67 @@
   }
 
   #contact {
-    height: 100vh;
+    height: auto;
+  }
+
+  #menu-bottom {
+    display: none;
   }
 
   /* End Custom Code */
 
+@media only screen and (max-width: 1000px) and (min-width: 701px) {
+  #menu-bottom {
+    display: block !important;
+    z-index: 50 !important;
+    background-color: white !important;
+  }
+  #social-icons-one {
+    text-align: center;
+  }
+  #social-icons-two {
+    margin-top: 2em;
+    text-align: center;
+  }
+  #menu-bottom {
+    display: none;
+  }
+  #see-version {
+    display: none;
+  }
+  #about {
+    height: auto;
+  }
+
+  #projects {
+    height: auto;
+  }
+
+  #profiles {
+    height: auto;
+  }
+
+  #contact {
+    height: auto;
+  }
+}
+
   @media only screen and (max-width: 700px) {
     .ui.fixed.menu {
+      display: none !important;
+    }
+    .top.menu {
       display: none !important;
     }
     .secondary.pointing.menu .item,
     .secondary.pointing.menu .menu {
       display: none;
     }
-    .secondary.pointing.menu .toc.item {
+    /* .secondary.pointing.menu .toc.item {
       display: block;
       position: fixed;
       z-index: 1;
-    }
+    } */
     .masthead.segment {
       height: 100vh;
       background-image: url("../images/alaskamountain.jpg") !important;
@@ -180,6 +223,18 @@
     }
     .ui.fixed.menu {
       display: none;
+    }
+    #menu-bottom {
+      display: block !important;
+      z-index: 50 !important;
+      background-color: white !important;
+    }
+    #social-icons-one {
+      text-align: center;
+    }
+    #social-icons-two {
+      margin-top: 2em;
+      text-align: center;
     }
   }
 
