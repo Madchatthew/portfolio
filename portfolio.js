@@ -5,10 +5,8 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
-app.use(express.static('public'));
+const index = require('../index')
 
-app.get('/', (req, res) => {
-    res.send('This is the index route.');
-});
+app.use(express.static('public'));
 
 app.listen(process.env.PORT);
