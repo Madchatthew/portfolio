@@ -2,7 +2,7 @@
  const router = express.Router();
 
 router.get('/', (req, res) => {
-    res.render('index/index');
+    res.render('index/index', { layout: './layouts/indexLayout' });
 });
 
 module.exports = router;

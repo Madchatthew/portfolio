@@ -1,0 +1,12 @@
+html {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    background-image: url('/images/indexBackground.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
