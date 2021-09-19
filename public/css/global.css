@@ -9,3 +9,84 @@ html {
 body {
     margin: 0;
 }
+
+/* This is the bottom menu section */
+
+#bottomMenuNav {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    background-color: #37669c;
+    animation-name: bottomMenuNav;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomMenuNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.bottomMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.bottomMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* End bottom menu section */
+
+/* This is the top menu section */
+
+#topMenuNav {
+    top: 0;
+    position: fixed;
+    width: 100%;
+    background-color: #37669c;
+    animation-name: topMenuNav;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes topMenuNav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.topMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.topMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+/* End bottom menu section */

@@ -17,7 +17,9 @@ app.use(expressLayouts);
 
 // Routes section
 const indexRouter = require('./routes/index');
+const aboutRouter = require('./routes/about');
 
 app.use('/', indexRouter);
+app.use('/about', aboutRouter);
 
 app.listen(process.env.PORT);
