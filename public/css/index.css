@@ -1,12 +1,131 @@
+@import url('global.css');
+
 html {
-    margin: 0;
-    padding: 0;
+    background: url('/images/indexBackground.jpg') no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
 }
 
-body {
+#wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    background-image: url('/images/indexBackground.jpg');
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
+}
+
+#name {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: white;
+    animation-name: name;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+}
+
+@keyframes name {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+#subtitle {
+    font-size: 1em;
+    font-weight: bold;
+    color: white;
+    margin-top: 1em;
+    opacity: 0;
+    animation-name: subtitle;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 1s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes subtitle {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+nav {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    background-color: #37669c;
+    animation-name: nav;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes nav {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+ul {
+    list-style: none;
+}
+
+.mobileMenu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.mobileMenu a {
+    text-decoration: none;
+    color: white;
+}
+
+.mobileMenuItem {
+    vertical-align: middle;
+}
+
+
+
+@media (min-width: 481px) {
+    #name {
+        font-size: 2em;
+    }
+
+    #subtitle {
+        font-size: 1.25em;
+    }
+}
+
+@media (min-width: 1025px) {
+    #name {
+        font-size: 2.5em;
+    }
+
+    #subtitle {
+        font-size: 1.5em;
+    }
+}
+
+@media (min-width: 1201px) {
+    #name {
+        font-size: 3em;
+    }
+
+    #subtitle {
+        font-size: 2em;
+    }
 }
