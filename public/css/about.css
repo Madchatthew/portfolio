@@ -1,1 +1,74 @@
 @import url('global.css');
+
+body {
+    background-color:  	hsl(211, 16%, 88%);
+}
+
+#aboutWrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 5em;
+}
+
+#aboutDiv {
+    width: 75%;
+    margin: 0 1em 0 1em;
+    opacity: 0;
+    animation-name: aboutDiv;
+    animation-timing-function: ease-in;
+    animation-duration: 2s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutDiv {
+    100% {
+        opacity: 1;
+    }
+}
+
+#aboutPhoto {
+    width: 100%;
+}
+
+#aboutDesc {
+    margin: 0 1em 0 1em;
+    color: hsl(212, 48%, 42%);
+    opacity: 0;
+    animation-name: aboutDesc;
+    animation-duration: 2s;
+    animation-delay: 3s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes aboutDesc {
+    100% {
+        opacity: 1;
+    }
+}
+
+@media (min-width: 768px) {
+    #aboutWrapper {
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #aboutDiv {
+        width: 45%;
+    }
+
+    #aboutPhoto {
+        width: 100%;
+    }
+
+    #aboutDesc {
+        width: 45%;
+        margin: 0 1em 0 1em;
+        color: hsl(212, 48%, 42%);
+    }
+
+}

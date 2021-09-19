@@ -8,6 +8,7 @@ html {
 
 body {
     margin: 0;
+    padding: 0;
 }
 
 /* This is the bottom menu section */
@@ -36,6 +37,7 @@ body {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .bottomMenu {
@@ -75,6 +77,7 @@ ul {
 
 ul {
     list-style: none;
+    padding: 0;
 }
 
 .topMenu {
@@ -89,4 +92,15 @@ ul {
     color: white;
 }
 
+#portfolio {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+#menuItems {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
 /* End bottom menu section */
