@@ -75,6 +75,10 @@ ul {
     }
 }
 
+#topMenuNav a {
+    color: hsl(222, 13%, 85%);
+}
+
 ul {
     list-style: none;
     padding: 0;
@@ -89,7 +93,7 @@ ul {
 
 .topMenu a {
     text-decoration: none;
-    color: white;
+    /* color: hsl(222, 13%, 85%); */
 }
 
 #portfolio {

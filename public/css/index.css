@@ -19,7 +19,7 @@ html {
 #name {
     font-size: 1.5em;
     font-weight: bold;
-    color: white;
+    color: hsl(222, 13%, 85%);
     animation-name: name;
     animation-timing-function: ease-in;
     animation-duration: 2s;
@@ -37,7 +37,7 @@ html {
 #subtitle {
     font-size: 1em;
     font-weight: bold;
-    color: white;
+    color: hsl(222, 13%, 85%);
     margin-top: 1em;
     opacity: 0;
     animation-name: subtitle;
