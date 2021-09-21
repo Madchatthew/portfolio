@@ -18,8 +18,10 @@ app.use(expressLayouts);
 // Routes section
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
+const skillsRouter = require('./routes/skills');
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
+app.use('/skills', skillsRouter);
 
 app.listen(process.env.PORT);

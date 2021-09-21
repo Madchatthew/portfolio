@@ -35,7 +35,12 @@ body {
     }
 }
 
-ul {
+#topMenuNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#bottomMenuNav ul {
     list-style: none;
     padding: 0;
 }
@@ -79,7 +84,7 @@ ul {
     color: hsl(222, 13%, 85%);
 }
 
-ul {
+#topMenuNav ul {
     list-style: none;
     padding: 0;
 }
@@ -100,6 +105,10 @@ ul {
     display: flex;
     justify-content: center;
     width: 100%;
+}
+
+.topMenuItemName {
+    font-size: 1.5rem;
 }
 
 #menuItems {

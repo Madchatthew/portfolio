@@ -1,1 +1,43 @@
 @import url('global.css');
+
+body {
+    background-color:  	hsl(211, 16%, 88%);
+    color: hsl(212, 48%, 42%);
+}
+
+#menuItems {
+    display: none;
+}
+
+#skillsWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 5rem 2rem 0 2rem;
+}
+
+#skillsWrapper ul {
+    list-style-type: disc;
+}
+
+.skillsHeader {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.01rem;
+}
+
+
+@media (min-width: 768px) {
+    #menuItems {
+        display: flex;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+
+    #skillsWrapper {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}

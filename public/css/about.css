@@ -4,6 +4,10 @@ body {
     background-color:  	hsl(211, 16%, 88%);
 }
 
+#menuItems {
+    display: none;
+}
+
 #aboutWrapper {
     display: flex;
     flex-direction: row;
@@ -52,6 +56,14 @@ body {
 }
 
 @media (min-width: 768px) {
+    #menuItems {
+        display: flex;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+
     #aboutWrapper {
         justify-content: space-around;
         width: 100%;
