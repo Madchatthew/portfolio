@@ -21,6 +21,19 @@ body {
     list-style-type: disc;
 }
 
+#skillsWrapper li {
+    line-height: 1.75rem;
+}
+
+#skillsWrapper a {
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+}
+
+#skillsWrapper a:visited {
+    color: hsl(212, 48%, 42%);
+}
+
 .skillsHeader {
     text-transform: uppercase;
     font-weight: bold;
@@ -48,10 +61,74 @@ body {
     animation-timing-function: ease-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 2s;
+    animation-delay: 1.25s;
 }
 
 @keyframes backend {
+    100% {
+        opacity: 1;
+    }
+}
+
+#frameworks {
+    opacity: 0;
+    animation-name: frameworks;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.50s;
+}
+
+@keyframes frameworks {
+    100% {
+        opacity: 1;
+    }
+}
+
+#databases {
+    opacity: 0;
+    animation-name: databases;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.75s;
+}
+
+@keyframes databases {
+    100% {
+        opacity: 1;
+    }
+}
+
+#frontend {
+    opacity: 0;
+    animation-name: frontend;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2s;
+}
+
+@keyframes frontend {
+    100% {
+        opacity: 1;
+    }
+}
+
+#designLibraries {
+    opacity: 0;
+    animation-name: designLibraries;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 2.25s;
+}
+
+#bottomMenuNav {
+    animation-delay: 2.5s;
+}
+
+@keyframes designLibraries {
     100% {
         opacity: 1;
     }
