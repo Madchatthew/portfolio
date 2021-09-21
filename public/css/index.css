@@ -17,7 +17,7 @@ html {
 }
 
 #name {
-    font-size: 1.5em;
+    font-size: 2.5em;
     font-weight: bold;
     color: hsl(222, 13%, 85%);
     animation-name: name;
@@ -58,7 +58,7 @@ html {
 
 @media (min-width: 481px) {
     #name {
-        font-size: 2em;
+        font-size: 3em;
     }
 
     #subtitle {
@@ -68,7 +68,7 @@ html {
 
 @media (min-width: 1025px) {
     #name {
-        font-size: 2.5em;
+        font-size: 4em;
     }
 
     #subtitle {
@@ -78,7 +78,7 @@ html {
 
 @media (min-width: 1201px) {
     #name {
-        font-size: 3em;
+        font-size: 5em;
     }
 
     #subtitle {
