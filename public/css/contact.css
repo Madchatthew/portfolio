@@ -1,19 +1,42 @@
 @import url('global.css');
 
+body {
+    background-color:  	hsl(211, 16%, 88%);
+    color: hsl(212, 48%, 42%);
+}
+
 #menuItems {
     display: none;
 }
 
 #formWrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: repeat(auto, 1fr); */
+    opacity: 0;
     margin: 5rem 1rem 0 1rem;
+    animation-name: formWrapper;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes formWrapper {
+    100% {
+        opacity: 1;
+    }
 }
 
 .formItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+legend {
+    margin-bottom: 1rem;
+}
+
+label {
     margin-bottom: 1rem;
 }
 
@@ -25,4 +48,10 @@
     #bottomMenuNav {
         display: none;
     }
+
+    #formWrapper {
+        margin: 5rem auto;
+        width: 50%;
+    }
+    
 }
