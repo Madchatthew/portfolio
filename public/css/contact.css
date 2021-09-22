@@ -1,2 +1,28 @@
 @import url('global.css');
 
+#menuItems {
+    display: none;
+}
+
+#formWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(auto, 1fr); */
+    margin: 5rem 1rem 0 1rem;
+}
+
+.formItem {
+    margin-bottom: 1rem;
+}
+
+@media (min-width: 768px) {
+    #menuItems {
+        display: flex;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+}
