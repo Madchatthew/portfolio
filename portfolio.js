@@ -19,9 +19,11 @@ app.use(expressLayouts);
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
 const skillsRouter = require('./routes/skills');
+const contactRouter = require('./routes/contact');
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
 app.use('/skills', skillsRouter);
+app.use('/contact', contactRouter);
 
 app.listen(process.env.PORT);
