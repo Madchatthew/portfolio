@@ -20,16 +20,15 @@ html {
     font-size: 2.5em;
     font-weight: bold;
     color: hsl(222, 13%, 85%);
+    opacity: 0;
     animation-name: name;
     animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
     animation-duration: 2s;
 }
 
 @keyframes name {
-    from {
-        opacity: 0;
-    }
-    to {
+    100% {
         opacity: 1;
     }
 }
@@ -54,9 +53,7 @@ html {
 }
 
 #socialMedia {
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
+    width: 100%;
     margin: 1rem 0 0 0;
     opacity: 0;
     animation-name: socialMedia;
@@ -72,8 +69,19 @@ html {
     }
 }
 
-.socialMediaIcon {
-    width: 15%;
+#socialMedia ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#socialMedia ul li {
+    list-style-type: none;
+    margin: 0;
+}
+
+#socialMedia ul li a img {
+    width: 45%;
 }
 
 @media (min-width: 481px) {
@@ -85,8 +93,8 @@ html {
         font-size: 1.25em;
     }
 
-    .socialMediaIcon {
-        width: 20%;
+    #socialMedia ul li a img {
+        width: 50%;
     }
 }
 
@@ -99,8 +107,8 @@ html {
         font-size: 1.5em;
     }
 
-    .socialMediaIcon {
-        width: 25%;
+    #socialMedia ul li a img {
+        width: 55%;
     }
 }
 
@@ -113,7 +121,7 @@ html {
         font-size: 2em;
     }
 
-    .socialMediaIcon {
-        width: 30%;
+    #socialMedia ul li a img {
+        width: 60%;
     }
 }
