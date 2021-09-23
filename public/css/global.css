@@ -80,6 +80,7 @@ body {
     width: 100%;
     opacity: 0;
     background-color: #37669c;
+    color: hsl(222, 13%, 85%);
     animation-name: bottomMenuNav;
     animation-timing-function: ease-in;
     animation-duration: 1s;
@@ -112,7 +113,7 @@ body {
 
 .bottomMenu a {
     text-decoration: none;
-    color: white;
+    color: hsl(222, 13%, 85%);
 }
 
 /* End bottom menu section */
