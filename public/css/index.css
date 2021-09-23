@@ -48,12 +48,32 @@ html {
 }
 
 @keyframes subtitle {
-    from {
-        opacity: 0;
-    }
-    to {
+    100% {
         opacity: 1;
     }
+}
+
+#socialMedia {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 1rem 0 0 0;
+    opacity: 0;
+    animation-name: socialMedia;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes socialMedia {
+    100% {
+        opacity: 1;
+    }
+}
+
+.socialMediaIcon {
+    width: 15%;
 }
 
 @media (min-width: 481px) {
@@ -63,6 +83,10 @@ html {
 
     #subtitle {
         font-size: 1.25em;
+    }
+
+    .socialMediaIcon {
+        width: 20%;
     }
 }
 
@@ -74,6 +98,10 @@ html {
     #subtitle {
         font-size: 1.5em;
     }
+
+    .socialMediaIcon {
+        width: 25%;
+    }
 }
 
 @media (min-width: 1201px) {
@@ -83,5 +111,9 @@ html {
 
     #subtitle {
         font-size: 2em;
+    }
+
+    .socialMediaIcon {
+        width: 30%;
     }
 }
