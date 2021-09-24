@@ -2,6 +2,7 @@
 
 body {
     background-color:  	hsl(213, 15%, 88%);
+    line-height: 1.25rem;
 }
 
 #menuItems {
@@ -40,7 +41,7 @@ body {
 }
 
 #aboutDesc {
-    margin: 0 1em 0 1em;
+    margin: 0 1em 3rem 1em;
     color: hsl(212, 48%, 42%);
     opacity: 0;
     animation-name: aboutDesc;
