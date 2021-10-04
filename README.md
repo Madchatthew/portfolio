@@ -1,2 +1,3 @@
 # portfolio
- My web dev portfolio
+ Chad Jessen
+ Full Stack Web Developer

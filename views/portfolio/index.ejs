@@ -1,5 +1,25 @@
-<% data[''].forEach(function(list) { %>
+<% results.forEach(function(list) { %>
     <div>
         <%= list['name'] %>
+    </div>
+
+    <div>
+        <%= list['description'] %> 
+    </div>
+
+    <div>
+        <%= list['homepage'] %>
+    </div>
+
+    <div>
+        <%= list['topics'] %>
+    </div>
+
+    <div>
+        <%= list['url'] %>
+    </div>
+
+    <div>
+        <%= list['updated_at'] %>
     </div>
 <% }) %>
