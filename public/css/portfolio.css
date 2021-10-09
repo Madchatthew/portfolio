@@ -22,7 +22,7 @@ body {
 
 .card {
     display: grid;
-    grid-template-rows: max-content 200px 1fr;
+    grid-template-rows: max-content 125px 1fr;
     box-shadow: 1px 0px 11px 8px hsl(212, 48%, 42%);
 }
 
