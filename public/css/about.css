@@ -41,7 +41,7 @@ body {
 }
 
 #aboutDesc {
-    margin: 0 1em 3rem 1em;
+    margin: 0 1em 3em 1em;
     color: hsl(212, 48%, 42%);
     opacity: 0;
     animation-name: aboutDesc;

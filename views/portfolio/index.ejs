@@ -1,25 +1,37 @@
-<% results.forEach(function(list) { %>
-    <div>
-        <%= list['name'] %>
-    </div>
+<div class="cards">
+    
+    <% results.forEach(function(list) { %>
+        
+        <article class="card">
+        
+            <header>
+                <%= list['name'] %>
+            </header>
 
-    <div>
-        <%= list['description'] %> 
-    </div>
+            <div class="card-content">
+                <%= list['description'] %> 
+            </div>
 
-    <div>
-        <%= list['homepage'] %>
-    </div>
+            <div class="card-content">
+                <a href="<%= list['homepage'] %>" target="_blank">Check out this site live.</a>
+            </div>
 
-    <div>
-        <%= list['topics'] %>
-    </div>
+            <div class="card-content">
+                <ul>
+                    <li><%= list['topics'] %></li>
+                </ul>
+            </div>
 
-    <div>
-        <%= list['url'] %>
-    </div>
+            <div class="card-content">
+                <%= list['url'] %>
+            </div>
 
-    <div>
-        <%= list['updated_at'] %>
-    </div>
-<% }) %>
+            <div class="card-footer">
+                <%= list['updated_at'] %>
+            </div>
+        
+        </article>
+
+    <% }) %>
+
+</div>

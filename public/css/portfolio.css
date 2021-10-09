@@ -1,8 +1,8 @@
 @import url('global.css');
 
 body {
-    background-color:  	hsl(213, 15%, 88%);
-    line-height: 1.25rem;
+    background-color:  	hsl(211, 16%, 88%);
+    color: hsl(212, 48%, 42%);
 }
 
 #menuItems {
@@ -11,6 +11,38 @@ body {
 
 #bottomMenuNav {
     animation-delay: 1.5s;
+}
+
+.cards {
+    margin: 5rem 1rem 5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 25px;
+}
+
+.card {
+    display: grid;
+    grid-template-rows: max-content 200px 1fr;
+    box-shadow: 1px 0px 11px 8px hsl(212, 48%, 42%);
+}
+
+.card header {
+    font-size: 1.25rem;
+    font-weight: bold;
+    margin: 1rem 0.45rem 1rem 0.45rem;
+    overflow: hidden;
+}
+
+.card-content {
+    margin: 0 0.45rem 1rem 0.45rem;
+}
+
+.card-content ul {
+    list-style-type: disc;
+}
+
+.card-footer {
+    margin: 0 0.45rem 1rem 0.45rem;
 }
 
 @media (min-width: 768px) {
