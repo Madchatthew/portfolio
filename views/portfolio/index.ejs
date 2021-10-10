@@ -8,22 +8,25 @@
                 <a href="<%= list['html_url'] %> " target="_blank"><%= list['name'] %></a>
             </header>
 
-            <div class="card-content">
+            <div class="card-content description">
                 <%= list['description'] %> 
             </div>
 
-            <div class="card-content">
-                <a href="<%= list['homepage'] %>" target="_blank">Check out this site live.</a>
+            <div class="card-content homepage">
+                <a href="<%= list['homepage'] %>" target="_blank">Check out this site live</a>
             </div>
 
             <div class="card-content">
-                <ul>
-                    <li><%= list['topics'] %></li>
-                </ul>
+                <p>Technologies Used</p>
+                <% list['topics'].forEach(function(topic) { %>
+                    <ul>
+                        <li><%= topic %> </li>
+                    </ul>
+                <% }) %> 
             </div>
 
             <div class="card-content">
-                <%= list['url'] %>
+                <a href="<%= list['url'] %>" target="_blank">Github Repository</a>
             </div>
 
             <div class="card-footer">

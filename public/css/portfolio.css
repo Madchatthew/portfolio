@@ -33,12 +33,36 @@ body {
     overflow: hidden;
 }
 
+.card header a {
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+}
+
 .card-content {
     margin: 0 0.45rem 1rem 0.45rem;
 }
 
+.description {
+
+}
+
+.homepage a {
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+}
+
+.card-content a {
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+}
+
+.card-content p {
+    font-weight: bold;
+}
+
 .card-content ul {
     list-style-type: disc;
+    line-height: 1px;
 }
 
 .card-footer {
