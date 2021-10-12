@@ -13,8 +13,14 @@ body {
     animation-delay: 1.5s;
 }
 
+#pageTitle {
+    font-weight: bold;
+    text-align: center;
+    margin-top: 5rem;
+}
+
 .cards {
-    margin: 5rem 1rem 5rem 1rem;
+    margin: 1rem 2rem 5rem 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 25px;
@@ -23,7 +29,8 @@ body {
 .card {
     display: grid;
     grid-template-rows: max-content 125px 1fr;
-    box-shadow: 1px 0px 11px 8px hsl(212, 48%, 42%);
+    border: 1px solid hsl(212, 48%, 42%);
+    box-shadow: 16px 9px 3px -2px hsl(212, 48%, 42%);
 }
 
 .card header {
@@ -44,6 +51,10 @@ body {
 
 .description {
 
+}
+
+#homepage {
+    
 }
 
 .homepage a {

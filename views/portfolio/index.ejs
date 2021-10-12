@@ -1,3 +1,7 @@
+<div id="pageTitle">
+    <h1>Github Repositories</h1>
+</div>
+
 <div class="cards">
     
     <% results.forEach(function(list) { %>
@@ -12,7 +16,7 @@
                 <%= list['description'] %> 
             </div>
 
-            <div class="card-content homepage">
+            <div id="homepage" class="card-content">
                 <a href="<%= list['homepage'] %>" target="_blank">Check out this site live</a>
             </div>
 
