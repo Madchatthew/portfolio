@@ -53,11 +53,13 @@ body {
 
 }
 
-#homepage {
-    
+#homepage a {
+    display: none;
 }
 
-.homepage a {
+#homepage a[href^="https:"],
+#homepage a[href^="http:"] {
+    display: block;
     text-decoration: none;
     color: hsl(212, 48%, 42%);
 }
