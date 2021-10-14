@@ -12,12 +12,8 @@
                 <a href="<%= list['html_url'] %> " target="_blank"><%= list['name'] %></a>
             </header>
 
-            <div class="card-content description">
+            <div class="card-content">
                 <%= list['description'] %> 
-            </div>
-
-            <div id="homepage">
-                <a href="<%= list['homepage'] %>" target="_blank">Check out this site live</a>
             </div>
 
             <div class="card-content">
@@ -29,12 +25,18 @@
                 <% }) %> 
             </div>
 
-            <div class="card-content">
-                <a href="<%= list['url'] %>" target="_blank">Github Repository</a>
+            <div id="homepage">
+                <a href="<%= list['homepage'] %>" target="_blank">Live Site</a>
             </div>
 
-            <div class="card-footer">
-                Updated: <%= list['updated_at'] %>
+            <div class="card-content">
+                <a href="<%= list['html_url'] %>" target="_blank">Github Repository</a>
+            </div>
+
+            <div class="card-footer event date" data-date="<%= list['updated_at'] %>">
+                
+                <div class="date"></div>
+                
             </div>
         
         </article>

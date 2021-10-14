@@ -14,9 +14,20 @@ body {
 }
 
 #pageTitle {
+    opacity: 0;
     font-weight: bold;
     text-align: center;
     margin-top: 5rem;
+    animation-name: pageTitle;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes pageTitle {
+    100% {
+        opacity: 1;
+    }
 }
 
 .cards {
@@ -27,10 +38,21 @@ body {
 }
 
 .card {
+    opacity: 0;
     display: grid;
     grid-template-rows: max-content 125px 1fr;
     border: 1px solid hsl(212, 48%, 42%);
     box-shadow: 16px 9px 3px -2px hsl(212, 48%, 42%);
+    animation-name: card;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes card {
+    100% {
+        opacity: 1;
+    }
 }
 
 .card header {
@@ -49,10 +71,6 @@ body {
     margin: 0 0.45rem 1rem 0.45rem;
 }
 
-.description {
-
-}
-
 #homepage a {
     display: none;
 }
@@ -62,6 +80,7 @@ body {
     display: block;
     text-decoration: none;
     color: hsl(212, 48%, 42%);
+    margin: 0 0.45rem 1rem 0.45rem;
 }
 
 .card-content a {
@@ -80,6 +99,10 @@ body {
 
 .card-footer {
     margin: 0 0.45rem 1rem 0.45rem;
+}
+
+.date {
+    font-size: 0.75rem;
 }
 
 @media (min-width: 768px) {
