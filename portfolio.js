@@ -22,6 +22,8 @@ app.use(express.urlencoded({ extended: true }));
 app.use(express.static('public'));
 app.use(expressLayouts);
 
+// End App Setup Section
+
 // Routes section
 
 const indexRouter = require('./routes/index');
@@ -36,4 +38,6 @@ app.use('/portfolio', portfolioRouter);
 app.use('/skills', skillsRouter);
 app.use('/contact', contactRouter);
 
-app.listen(process.env.PORT);
+// End Routes Section
+
+app.listen(process.env.PORTFOLIOPORT);
