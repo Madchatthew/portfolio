@@ -20,7 +20,7 @@ router.post('/', (req, res) => {
         }
     })
 
-    // Specify what the email will look linkedin
+    // Specify what the email will look like
 
     const mailOpts = {
         from: `${req.body.email}`,
@@ -31,13 +31,18 @@ router.post('/', (req, res) => {
 
     // Attempt to send the email
 
-    smtpTrans.send(mailOpts, (err, res) => {
-        if (err) {
-            res.send('contact/index'); // Show a page indicating failure
-        } else {
-            res.render('contact/index'); // Show a page indicating success
-        }
-    })
+    if(req.body.details != "") {
+        res.render('contact/index');
+    } else {
+        smtpTrans.send(mailOpts, (err, res) => {
+            if (err) {
+                res.render('contact/index'); // Show a page indicating failure
+            } else {
+                res.render('contact/index'); // Show a page indicating success
+            }
+        })
+    }
+    
 })
 
 module.exports = router;
