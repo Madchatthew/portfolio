@@ -1,120 +1,24 @@
+:root {
+    --main-bg-color: hsl(222, 13%, 85%);
+    --main-font-color: hsl(212, 48%, 42%);
+    --top-menu-bg-color: hsl(212, 48%, 42%);
+    --top-menu-font-color: hsl(222, 13%, 85%);
+    --bottom-menu-bg-color: hsl(212, 48%, 42%);
+    --bottom-menu-font-color: hsl(222, 13%, 85%);
+}
+
 html {
     margin: 0;
     padding: 0;
     font-family:Georgia, 'Ariel', Sans-serif;
     font-size: 16px;
     letter-spacing: 1px;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
 }
 
 body {
     margin: 0;
     padding: 0;
+    line-height: 1.25rem;
 }
-
-/* This is the top menu section */
-
-#topMenuNav {
-    top: 0;
-    position: fixed;
-    width: 100%;
-    opacity: 0;
-    background-color: #37669c;
-    animation-name: topMenuNav;
-    animation-timing-function: ease-in;
-    animation-fill-mode: forwards;
-    animation-duration: 1s;
-    z-index: 1;
-}
-
-@keyframes topMenuNav {
-    100% {
-        opacity: 1;
-    }
-}
-
-#topMenuNav a {
-    color: hsl(222, 13%, 85%);
-}
-
-#topMenuNav a:visited {
-    color: hsl(222, 13%, 85%);
-}
-
-#topMenuNav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.topMenu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.topMenu a {
-    text-decoration: none;
-}
-
-#portfolio {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-}
-
-.topMenuItemName {
-    font-size: 1.5rem;
-}
-
-#menuItems {
-    display: flex;
-    justify-content: space-around;
-    width: 100%;
-}
-/* End bottom menu section */
-
-/* This is the bottom menu section */
-
-#bottomMenuNav {
-    bottom: 0;
-    position: fixed;
-    width: 100%;
-    opacity: 0;
-    background-color: #37669c;
-    color: hsl(222, 13%, 85%);
-    animation-name: bottomMenuNav;
-    animation-timing-function: ease-in;
-    animation-duration: 1s;
-    animation-delay: 2s;
-    animation-fill-mode: forwards;
-}
-
-@keyframes bottomMenuNav {
-    100% {
-        opacity: 1;
-    }
-}
-
-#topMenuNav ul {
-    list-style: none;
-    padding: 0;
-}
-
-#bottomMenuNav ul {
-    list-style: none;
-    padding: 0;
-}
-
-.bottomMenu {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 100%;
-}
-
-.bottomMenu a {
-    text-decoration: none;
-    color: hsl(222, 13%, 85%);
-}
-
-/* End bottom menu section */

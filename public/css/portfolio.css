@@ -1,11 +1,6 @@
 @import url('global.css');
 
-body {
-    background-color:  	hsl(211, 16%, 88%);
-    color: hsl(212, 48%, 42%);
-}
-
-#menuItems {
+#topMenuNav {
     display: none;
 }
 
@@ -17,7 +12,7 @@ body {
     opacity: 0;
     font-weight: bold;
     text-align: center;
-    margin-top: 5rem;
+    margin-top: 1rem;
     animation-name: pageTitle;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
@@ -106,8 +101,12 @@ body {
 }
 
 @media (min-width: 768px) {
-    #menuItems {
+    #topMenuNav {
         display: flex;
+    }
+
+    #pageTitle {
+        margin-top: 5rem;
     }
 
     #bottomMenuNav {
