@@ -1,17 +1,12 @@
 @import url('global.css');
 
-body {
-    background-color:  	hsl(211, 16%, 88%);
-    color: hsl(212, 48%, 42%);
-}
-
-#menuItems {
+#topMenuNav {
     display: none;
 }
 
 #formWrapper {
     opacity: 0;
-    margin: 5rem 1rem 0 1rem;
+    margin: 1rem 1rem 0 1rem;
     animation-name: formWrapper;
     animation-timing-function: ease-in;
     animation-duration: 1s;
@@ -45,7 +40,7 @@ label {
 }
 
 @media (min-width: 768px) {
-    #menuItems {
+    #topMenuNav {
         display: flex;
     }
 

@@ -28,12 +28,14 @@ app.use(expressLayouts);
 
 const indexRouter = require('./routes/index');
 const aboutRouter = require('./routes/about');
+const experienceRouter = require('./routes/experience');
 const portfolioRouter = require('./routes/portfolio');
 const skillsRouter = require('./routes/skills');
 const contactRouter = require('./routes/contact');
 
 app.use('/', indexRouter);
 app.use('/about', aboutRouter);
+app.use('/experience', experienceRouter);
 app.use('/portfolio', portfolioRouter);
 app.use('/skills', skillsRouter);
 app.use('/contact', contactRouter);

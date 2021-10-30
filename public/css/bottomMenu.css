@@ -42,12 +42,12 @@
     color: var(--bottom-menu-font-color);
 }
 
-.hov {
+.hovBottom {
     position: relative;
     z-index: 2;
 }
 
-.subMenu {
+.subMenuBottom {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;
@@ -63,7 +63,7 @@
     transition: opacity 450ms ease-in;
 }
 
-.hov:hover .subMenu {
+.hovBottom:hover .subMenuBottom {
     display: flex;
     flex-direction: column-reverse;
     justify-content: space-evenly;

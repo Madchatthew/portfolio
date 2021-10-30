@@ -50,12 +50,12 @@
     width: 50%;
 }
 
-.hov {
+.hovTop {
     position: relative;
     z-index: 2;
 }
 
-.subMenu {
+.subMenuTop {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -71,7 +71,7 @@
     transition: opacity 450ms ease-in;
 }
 
-.hov:hover .subMenu {
+.hovTop:hover .subMenuTop {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;

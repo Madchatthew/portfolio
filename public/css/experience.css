@@ -1,0 +1,23 @@
+@import url('global.css');
+
+#topMenuNav {
+    display: none;
+}
+
+#content {
+    margin: 1rem 1rem 0 1rem;
+}
+
+@media (min-width: 768px) {
+    #topMenuNav {
+        display: flex;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+
+    #content {
+        margin-top: 5rem;
+    }
+}
