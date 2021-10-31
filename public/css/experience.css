@@ -4,8 +4,27 @@
     display: none;
 }
 
-#content {
-    margin: 1rem 1rem 0 1rem;
+#experienceContent {
+    margin: 1rem 1rem 5rem 1rem;
+}
+
+#experienceContent h1 {
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+#experienceContent h2 {
+    font-size: 0.75rem;
+    font-weight: bold;
+}
+
+#experienceContent h3 {
+    font-size: 0.75rem;
+}
+
+#experienceContent ul {
+    font-size: 0.75rem;
+    margin-left: 0;
 }
 
 @media (min-width: 768px) {
@@ -17,7 +36,26 @@
         display: none;
     }
 
-    #content {
-        margin-top: 5rem;
+    #experienceContent {
+        margin: 5rem 1rem 0 1rem;
+    }
+
+    #experienceContent h1 {
+        font-size: 2rem;
+        font-weight: bold;
+    }
+    
+    #experienceContent h2 {
+        font-size: 1rem;
+        font-weight: bold;
+    }
+    
+    #experienceContent h3 {
+        font-size: 1rem;
+    }
+    
+    #experienceContent ul {
+        font-size: 1rem;
+        margin-left: 0;
     }
 }
