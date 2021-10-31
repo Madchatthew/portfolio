@@ -4,25 +4,25 @@
     display: none;
 }
 
-#experienceContent {
+#itExperienceContent {
     margin: 1rem 1rem 5rem 1rem;
 }
 
-#experienceContent h1 {
+#itExperienceContent h1 {
     font-size: 1rem;
     font-weight: bold;
 }
 
-#experienceContent h2 {
+#itExperienceContent h2 {
     font-size: 0.75rem;
     font-weight: bold;
 }
 
-#experienceContent h3 {
+#itExperienceContent h3 {
     font-size: 0.75rem;
 }
 
-#experienceContent ul {
+#itExperienceContent ul {
     font-size: 0.75rem;
     margin-left: 0;
 }
@@ -36,26 +36,48 @@
         display: none;
     }
 
-    #experienceContent {
+    #itExperienceContent {
+        display: grid;
+        justify-content: space-evenly;
+        grid-column: 1fr 4fr;
+        column-gap: 5rem;
         margin: 5rem 1rem 0 1rem;
     }
 
-    #experienceContent h1 {
+    #itExperienceContent h1 {
         font-size: 2rem;
         font-weight: bold;
     }
     
-    #experienceContent h2 {
+    #itExperienceContent h2 {
         font-size: 1rem;
         font-weight: bold;
     }
     
-    #experienceContent h3 {
+    #itExperienceContent h3 {
         font-size: 1rem;
     }
     
-    #experienceContent ul {
+    #itExperienceContent ul {
         font-size: 1rem;
         margin-left: 0;
+    }
+
+    .experienceTitle {
+        grid-column: 1/ 2;
+        grid-row: 1 / 2;
+    }
+
+    .itDateExperience {
+        font-style: italic;
+    }
+
+    .onGoing {
+        grid-row: 1 / 2;
+        grid-column: 2 / 5;
+    }
+
+    .job {
+        grid-column: 2 / 5;
     }
 }
