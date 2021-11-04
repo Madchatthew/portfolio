@@ -37,7 +37,7 @@ html {
     font-size: 1em;
     font-weight: bold;
     color: hsl(222, 13%, 85%);
-    margin-top: 1em;
+    margin-top: 2em;
     opacity: 0;
     animation-name: subtitle;
     animation-timing-function: ease-in;
@@ -54,7 +54,7 @@ html {
 
 #socialMedia {
     width: 100%;
-    margin: 1rem 0 0 0;
+    margin: 2rem 0 0 0;
     opacity: 0;
     animation-name: socialMedia;
     animation-timing-function: ease-in;

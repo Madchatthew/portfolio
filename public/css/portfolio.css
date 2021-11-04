@@ -51,7 +51,7 @@
 }
 
 .card header {
-    font-size: 1.25rem;
+    font-size: 1rem;
     font-weight: bold;
     margin: 1rem 0.45rem 1rem 0.45rem;
     overflow: hidden;
@@ -64,6 +64,7 @@
 
 .card-content {
     margin: 0 0.45rem 1rem 0.45rem;
+    font-size: 0.75rem;
 }
 
 #homepage a {
