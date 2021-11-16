@@ -26,7 +26,7 @@
 }
 
 .cards {
-    margin: 1rem 2rem 5rem 1rem;
+    margin: 2rem 2rem 5rem 1rem;
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     grid-gap: 3rem;
@@ -36,8 +36,8 @@
     opacity: 0;
     display: grid;
     grid-template-rows: max-content 125px 1fr;
-    border: 1px solid hsl(212, 48%, 42%);
-    box-shadow: 16px 9px 3px -2px hsl(212, 48%, 42%);
+    border: 1px solid var(--main-border-color);
+    box-shadow: 16px 9px 3px -2px var(--main-border-color);
     animation-name: card;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;

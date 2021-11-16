@@ -1,10 +1,12 @@
 :root {
-    --main-bg-color: hsl(222, 13%, 85%);
+    --main-bg-color: hsl(222, 13%, 88%);
     --main-font-color: hsl(212, 48%, 42%);
+    --main-border-color: hsl(212, 48%, 42%);
     --top-menu-bg-color: hsl(212, 48%, 42%);
     --top-menu-font-color: hsl(222, 13%, 85%);
     --bottom-menu-bg-color: hsl(212, 48%, 42%);
     --bottom-menu-font-color: hsl(222, 13%, 85%);
+
 }
 
 html {
