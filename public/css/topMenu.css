@@ -1,0 +1,92 @@
+@import url('global.css');
+
+#topMenuNav {
+    display: flex;
+    justify-content: space-between;
+    top: 0;
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    background-color: var(--top-menu-bg-color);
+    animation-name: topMenuNav;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-duration: 1s;
+    z-index: 1;
+}
+
+@keyframes topMenuNav {
+    100% {
+        opacity: 1;
+    }
+}
+
+#topMenuNav a {
+    color: var(--top-menu-font-color);
+    text-decoration: none;
+}
+
+#topMenuNav a:visited {
+    color: var(--top-menu-font-color);
+}
+
+#topMenuNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.topName {
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.topName {
+    font-size: 1.25rem;
+}
+
+.topMenuItems {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-self: flex-end;
+    width: 50%;
+}
+
+.topMenuItems a {
+    font-size: 1.10rem;
+}
+
+.hovTop {
+    position: relative;
+    z-index: 2;
+}
+
+.subMenuTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+    opacity: 0;
+    height: 8rem;
+    width: 250%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--top-menu-bg-color);
+    text-align: center;
+    transition: opacity 450ms ease-in;
+}
+
+.hovTop:hover .subMenuTop {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+    opacity: 1;
+    pointer-events: all;
+    height: 8rem;
+    width: 250%;
+    text-align: center;
+    transition: opacity 450ms ease-out;
+}

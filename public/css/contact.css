@@ -1,0 +1,56 @@
+@import url('global.css');
+
+#topMenuNav {
+    display: none;
+}
+
+#formWrapper {
+    opacity: 0;
+    margin: 1rem 1rem 0 1rem;
+    animation-name: formWrapper;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes formWrapper {
+    100% {
+        opacity: 1;
+    }
+}
+
+.formItem {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 1rem;
+}
+
+legend {
+    margin-bottom: 1rem;
+}
+
+label {
+    margin-bottom: 1rem;
+}
+
+#details {
+    display: none;
+}
+
+@media (min-width: 768px) {
+    #topMenuNav {
+        display: flex;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+
+    #formWrapper {
+        margin: 5rem auto;
+        width: 50%;
+    }
+    
+}

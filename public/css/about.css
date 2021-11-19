@@ -1,0 +1,93 @@
+@import url('global.css');
+
+#topMenuNav {
+    display: none;
+}
+
+#aboutWrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 1rem;
+}
+
+#aboutDivPhoto {
+    width: 75%;
+    margin: 0 1em 0 1em;
+    opacity: 0;
+    animation-name: aboutDiv;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes aboutDiv {
+    100% {
+        opacity: 1;
+    }
+}
+
+#aboutPhoto {
+    width: 100%;
+}
+
+#aboutDesc {
+    margin: 0 1em 3em 1em;
+    color: hsl(212, 48%, 42%);
+    opacity: 0;
+    animation-name: aboutDesc;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes aboutDesc {
+    100% {
+        opacity: 1;
+    }
+}
+
+#bottomMenuNav {
+    animation-delay: 1.5s;
+}
+
+@media (min-width: 768px) {
+    #topMenuNav {
+        display: flex;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+
+    #aboutWrapper {
+        margin-top: 5rem;
+        justify-content: space-around;
+        width: 100%;
+    }
+
+    #aboutDivPhoto {
+        width: 45%;
+    }
+
+    #aboutPhoto {
+        width: 100%;
+    }
+
+    #aboutDesc {
+        width: 45%;
+        margin: 0 1em 0 1em;
+        color: hsl(212, 48%, 42%);
+    }
+
+}
+
+@media (min-width: 1201px) {
+    #aboutWrapper {
+        flex-direction: row;
+        justify-content: center;
+    }
+}

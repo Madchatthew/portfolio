@@ -1,0 +1,46 @@
+<div id="pageTitle">
+    <h1>Github Repositories</h1>
+</div>
+
+<div class="cards">
+    
+    <% results.forEach(function(list) { %>
+        
+        <article class="card">
+        
+            <header>
+                <a href="<%= list['html_url'] %> " target="_blank"><%= list['name'] %></a>
+            </header>
+
+            <div class="card-content">
+                <%= list['description'] %> 
+            </div>
+
+            <div class="card-content">
+                <p>Technologies Used</p>
+                <% list['topics'].forEach(function(topic) { %>
+                    <ul>
+                        <li><%= topic %> </li>
+                    </ul>
+                <% }) %> 
+            </div>
+
+            <div id="homepage">
+                <a href="<%= list['homepage'] %>" target="_blank">Live Site</a>
+            </div>
+
+            <div class="card-content">
+                <a href="<%= list['html_url'] %>" target="_blank">Github Repository</a>
+            </div>
+
+            <div class="card-footer event date" data-date="<%= list['updated_at'] %>">
+                
+                <div class="date"></div>
+                
+            </div>
+        
+        </article>
+
+    <% }) %>
+
+</div>

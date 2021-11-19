@@ -1,0 +1,78 @@
+@import url('global.css');
+
+#bottomMenuNav {
+    bottom: 0;
+    position: fixed;
+    width: 100%;
+    opacity: 0;
+    background-color: #37669c;
+    color: var(--main-font-color);
+    animation-name: bottomMenuNav;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-delay: 2s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes bottomMenuNav {
+    100% {
+        opacity: 1;
+    }
+}
+
+#topMenuNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+#bottomMenuNav ul {
+    list-style: none;
+    padding: 0;
+}
+
+.bottomMenuItems {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+
+.bottomMenuItems a {
+    text-decoration: none;
+    color: var(--bottom-menu-font-color);
+}
+
+.hovBottom {
+    position: relative;
+    z-index: 2;
+}
+
+.subMenuBottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+    opacity: 0;
+    height: 8rem;
+    width: 200%;
+    pointer-events: none;
+    position: absolute;
+    z-index: 1;
+    background-color: var(--top-menu-bg-color);
+    text-align: center;
+    transition: opacity 450ms ease-in;
+}
+
+.hovBottom:hover .subMenuBottom {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-evenly;
+    gap: 0.25rem;
+    opacity: 1;
+    pointer-events: all;
+    height: 8rem;
+    width: 200%;
+    text-align: center;
+    transition: opacity 450ms ease-out;
+    bottom: 100%;
+}

@@ -1,0 +1,116 @@
+@import url('global.css');
+
+#topMenuNav {
+    display: none;
+}
+
+#bottomMenuNav {
+    animation-delay: 1.5s;
+}
+
+#pageTitle {
+    opacity: 0;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 1rem;
+    animation-name: pageTitle;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1s;
+}
+
+@keyframes pageTitle {
+    100% {
+        opacity: 1;
+    }
+}
+
+.cards {
+    margin: 2rem 2rem 5rem 1rem;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 3rem;
+}
+
+.card {
+    opacity: 0;
+    display: grid;
+    grid-template-rows: max-content 125px 1fr;
+    border: 1px solid var(--main-border-color);
+    box-shadow: 16px 9px 3px -2px var(--main-border-color);
+    animation-name: card;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+    animation-delay: 1.5s;
+}
+
+@keyframes card {
+    100% {
+        opacity: 1;
+    }
+}
+
+.card header {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 1rem 0.45rem 1rem 0.45rem;
+    overflow: hidden;
+}
+
+.card header a {
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+}
+
+.card-content {
+    margin: 0 0.45rem 1rem 0.45rem;
+    font-size: 0.75rem;
+}
+
+#homepage a {
+    display: none;
+}
+
+#homepage a[href^="https:"],
+#homepage a[href^="http:"] {
+    display: block;
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+    margin: 0 0.45rem 1rem 0.45rem;
+}
+
+.card-content a {
+    text-decoration: none;
+    color: hsl(212, 48%, 42%);
+}
+
+.card-content p {
+    font-weight: bold;
+}
+
+.card-content ul {
+    list-style-type: disc;
+    line-height: 1px;
+}
+
+.card-footer {
+    margin: 0 0.45rem 1rem 0.45rem;
+}
+
+.date {
+    font-size: 0.75rem;
+}
+
+@media (min-width: 768px) {
+    #topMenuNav {
+        display: flex;
+    }
+
+    #pageTitle {
+        margin-top: 5rem;
+    }
+
+    #bottomMenuNav {
+        display: none;
+    }
+}

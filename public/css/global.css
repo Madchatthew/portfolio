@@ -1,0 +1,26 @@
+:root {
+    --main-bg-color: hsl(222, 13%, 88%);
+    --main-font-color: hsl(212, 48%, 42%);
+    --main-border-color: hsl(212, 48%, 42%);
+    --top-menu-bg-color: hsl(212, 48%, 42%);
+    --top-menu-font-color: hsl(222, 13%, 85%);
+    --bottom-menu-bg-color: hsl(212, 48%, 42%);
+    --bottom-menu-font-color: hsl(222, 13%, 85%);
+
+}
+
+html {
+    margin: 0;
+    padding: 0;
+    font-family:Georgia, 'Ariel', Sans-serif;
+    font-size: 16px;
+    letter-spacing: 1px;
+    background-color: var(--main-bg-color);
+    color: var(--main-font-color);
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    line-height: 1.25rem;
+}
