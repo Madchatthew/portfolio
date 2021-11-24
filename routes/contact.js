@@ -24,12 +24,12 @@ router.post('/', async (req, res) => {
             subject: 'New message from a visitor at chadjessen.com',
             text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
         });
-        
-        if(req.body.details != "") {
-            res.render('contact/index', { layout: './layouts/contactLayout' });
-        } else {
-            res.render('index/index', { layout: './layouts/contactLayout' });
-        }
+        console.log(message);
+        // if(req.body.details != "") {
+        //     res.render('contact/index', { layout: './layouts/contactLayout' });
+        // } else {
+        //     res.render('index/index', { layout: './layouts/contactLayout' });
+        // }
 
     } catch (err) {
         // do something here if error
