@@ -8,9 +8,9 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
 
-    let emailName = form: req.body.name;
-    let emailAddress = form: req.body.email;
-    let emailMessage = form: req.body.message;
+    let emailName = req.body.name;
+    let emailAddress = req.body.email;
+    let emailMessage = req.body.message;
 
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
