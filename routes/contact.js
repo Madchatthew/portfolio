@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     res.render('contact/index', { layout: './layouts/contactLayout' });
 });
 
-router.post('/', async (req, res) => {
+router.post('/', (req, res) => {
 
     // SMTP server setup
 
@@ -15,26 +15,25 @@ router.post('/', async (req, res) => {
         password: process.env.EMAIL_PASSWORD,
         host: process.env.HOST,
         ssl: true
-    })
-
-    try {
-        const message = await client.sendAsync({
+    });
+    
+    client.send(
+        {
             from: `${req.body.email}`,
             to: `chadjessen@chadjessen.com`,
             subject: 'New message from a visitor at chadjessen.com',
             text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-        });
-        console.log(message);
-        // if(req.body.details != "") {
-        //     res.render('contact/index', { layout: './layouts/contactLayout' });
-        // } else {
-        //     res.render('index/index', { layout: './layouts/contactLayout' });
-        // }
+        },
+        (err, message) => {
+            console.log(err || message);
+        }
+    );
 
-    } catch (err) {
-        // do something here if error
-        console.err(err);
-    }    
+    // if(req.body.details != "") {
+    //     res.render('contact/index', { layout: './layouts/contactLayout' });
+    // } else {
+    //     res.render('index/index', { layout: './layouts/contactLayout' });
+    // }
 })
 
 module.exports = router;
