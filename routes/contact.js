@@ -32,13 +32,13 @@ router.post('/', (req, res) => {
     // Attempt to send the email
 
     if(req.body.details != "") {
-        res.render('contact/index');
+        res.render('contact/index', { layout: './layouts/contactLayout' });
     } else {
         smtpTrans.send(mailOpts, (err, res) => {
             if (err) {
-                res.render('contact/index'); // Show a page indicating failure
+                res.render('contact/index', { layout: './layouts/contactLayout' }); // Show a page indicating failure
             } else {
-                res.render('contact/index'); // Show a page indicating success
+                res.render('contact/index', { layout: './layouts/contactLayout' }); // Show a page indicating success
             }
         })
     }
