@@ -35,7 +35,8 @@ router.post('/', (req, res) => {
     } else {
         transporter.send(mailOpts, (err, res) => {
             if (err) {
-                res.render('contact/index', { layout: './layouts/contactLayout' }); // Show a page indicating failure
+                alert('This did not send');
+                // res.render('contact/index', { layout: './layouts/contactLayout' }); // Show a page indicating failure
             } else {
                 res.render('contact/index', { layout: './layouts/contactLayout' }); // Show a page indicating success
             }
