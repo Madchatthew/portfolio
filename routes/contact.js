@@ -31,8 +31,7 @@ router.post('/', (req, res) => {
     // Attempt to send the email
 
     if(req.body.details != "") {
-        alert('BAAAMMM YOU GOT CAUGHT!!');
-        // res.render('contact/index', { layout: './layouts/contactLayout' });
+        res.render('contact/index', { layout: './layouts/contactLayout' });
     } else {
         transporter.send(mailOpts, (err, res) => {
             if (err) {
