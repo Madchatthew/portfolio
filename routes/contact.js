@@ -12,6 +12,9 @@ router.post('/', (req, res) => {
 
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
+        name: server1,
+        secure: true,
+        port: 465,
         auth: {
             user: process.env.EMAIL_USERNAME,
             password: process.env.EMAIL_PASSWORD
