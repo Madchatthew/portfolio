@@ -8,6 +8,10 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
 
+    let emailName = req.body.name;
+    let emailAddress = req.body.email;
+    let emailMessage = req.body.message;
+
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
         port: process.env.SMTPPORT,
@@ -19,10 +23,10 @@ router.post('/', async (req, res) => {
     });
     
     let email = await transporter.sendMail({
-        from: `${req.body.email}`,
+        from: emailAddress,
         to: `chadjessen@chadjessen.com`,
         subject: 'New message from a visitor at chadjessen.com',
-        text: `req.body.name with email address req.body.email says: req.body.message`
+        text: `${ emailName } with email address ${ emailAddress } says: ${ emailMessage }`
     })
 
     if(req.body.details != "") {
