@@ -22,7 +22,7 @@ router.post('/', async (req, res) => {
         from: `${req.body.email}`,
         to: `chadjessen@chadjessen.com`,
         subject: 'New message from a visitor at chadjessen.com',
-        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+        text: `req.body.name with email address req.body.email says: req.body.message`
     })
 
     if(req.body.details != "") {
