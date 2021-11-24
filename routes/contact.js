@@ -1,39 +1,41 @@
 const express = require('express');
-const smptClient = require('emailjs');
+const nodemailer = require('nodemailer');
 const router = express.Router();
 
 router.get('/', (req, res) => {
     res.render('contact/index', { layout: './layouts/contactLayout' });
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
 
-    // SMTP server setup
-
-    const client = new smptClient({
-        user: process.env.EMAIL_USERNAME,
-        password: process.env.EMAIL_PASSWORD,
+    let transporter = nodemailer.createTransport({
         host: process.env.HOST,
-        ssl: true
+        port: process.env.SMTPPORT,
+        secure: true,
+        auth: {
+            user: process.env.EMAIL_USERNAME,
+            pass: process.env.EMAIL_PASSWORD
+        }
     });
     
-    client.send(
-        {
-            from: `${req.body.email}`,
-            to: `chadjessen@chadjessen.com`,
-            subject: 'New message from a visitor at chadjessen.com',
-            text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
-        },
-        (err, message) => {
-            console.log(err || message);
-        }
-    );
+    let email = await transporter.sendMail({
+        from: `${req.body.email}`,
+        to: `chadjessen@chadjessen.com`,
+        subject: 'New message from a visitor at chadjessen.com',
+        text: `${req.body.name} (${req.body.email}) says: ${req.body.message}`
+    })
 
-    // if(req.body.details != "") {
-    //     res.render('contact/index', { layout: './layouts/contactLayout' });
-    // } else {
-    //     res.render('index/index', { layout: './layouts/contactLayout' });
-    // }
+    if(req.body.details != "") {
+        res.render('contact/index', { layout: './layouts/contactLayout' });
+    } else {
+        transporter.sendMail(email, (error, info) => {
+            if (error) {
+                res.send('error occured');
+            } else {
+                res.render('index/index', { layout: './layouts/indexLayout' });
+            }
+        })
+    }
 })
 
 module.exports = router;
