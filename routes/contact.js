@@ -12,7 +12,6 @@ router.post('/', (req, res) => {
 
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
-        secure: false,
         auth: {
             user: process.env.EMAIL_USERNAME,
             password: process.env.EMAIL_PASSWORD
@@ -24,7 +23,7 @@ router.post('/', (req, res) => {
 
     // Specify what the email will look like
 
-    const mailOpts = {
+    let mailOpts = {
         from: `${req.body.email}`,
         to: `chadjessen@chadjessen.com`,
         subject: 'New message from a visitor at chadjessen.com',
