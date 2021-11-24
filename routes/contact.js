@@ -10,17 +10,10 @@ router.post('/', (req, res) => {
 
     // SMTP server setup
 
-    const smtpTrans = nodemailer.createTransport({
-        host: process.env.HOST,
-        port: process.env.SMTPPORT,
-        secure: true,
-        auth: {
-            user: process.env.EMAIL_USERNAME,
-            pass: process.env.EMAIL_PASSWORD
-        },
-        tls: {
-            rejectUnauthorized: false
-        }
+    let smtpTrans = nodemailer.createTransport({
+        sendmail: true,
+        newline: 'unix',
+        path: '/usr/sbin/sendmail'
     })
 
     // Specify what the email will look like
