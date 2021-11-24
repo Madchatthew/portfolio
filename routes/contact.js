@@ -14,7 +14,7 @@ router.post('/', (req, res) => {
         host: process.env.HOST,
         name: process.env.SERVER_NAME,
         secure: true,
-        port: SMTPPORT,
+        port: process.env.SMTPPORT,
         auth: {
             user: process.env.EMAIL_USERNAME,
             password: process.env.EMAIL_PASSWORD
