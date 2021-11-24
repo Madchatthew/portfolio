@@ -10,10 +10,13 @@ router.post('/', (req, res) => {
 
     // SMTP server setup
 
-    let smtpTrans = nodemailer.createTransport({
-        sendmail: true,
-        newline: 'unix',
-        path: '/usr/sbin/sendmail'
+    let transporter = nodemailer.createTransport({
+        host: process.env.HOST,
+        port: 25,
+        secure: false,
+        tls: {
+            rejectUnauthorized: false
+        }
     })
 
     // Specify what the email will look like
@@ -30,7 +33,7 @@ router.post('/', (req, res) => {
     if(req.body.details != "") {
         res.render('contact/index', { layout: './layouts/contactLayout' });
     } else {
-        smtpTrans.send(mailOpts, (err, res) => {
+        transporter.send(mailOpts, (err, res) => {
             if (err) {
                 res.render('contact/index', { layout: './layouts/contactLayout' }); // Show a page indicating failure
             } else {
