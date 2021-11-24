@@ -6,7 +6,7 @@ router.get('/', (req, res) => {
     res.render('contact/index', { layout: './layouts/contactLayout' });
 });
 
-router.post('/', (req, res) => {
+router.post('/', async (req, res) => {
 
     // SMTP server setup
 
