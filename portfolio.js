@@ -7,7 +7,6 @@ if (process.env.NODE_ENV !== 'production') {
 const express = require('express');
 const expressLayouts = require('express-ejs-layouts');
 const axios = require('axios').default;
-const nodemailer = require('nodemailer');
 const app = express();
 
 // End application requirements
