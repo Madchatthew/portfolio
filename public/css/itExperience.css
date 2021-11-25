@@ -27,6 +27,51 @@
     margin-left: 0;
 }
 
+.experienceTitle {
+    opacity: 0;
+    animation-name: itExperienceTitle;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.25s;
+}
+
+@keyframes itExperienceTitle {
+    100% {
+        opacity: 1;
+    }
+}
+
+.onGoing {
+    opacity: 0;
+    animation-name: onGoing;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.50s;
+}
+
+@keyframes onGoing {
+    100% {
+        opacity: 1;
+    }
+}
+
+.job {
+    opacity: 0;
+    animation-name: job;
+    animation-timing-function: ease-in;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-delay: 0.75s;
+}
+
+@keyframes job {
+    100% {
+        opacity: 1;
+    }
+}
+
 @media (min-width: 768px) {
     #topMenuNav {
         display: flex;

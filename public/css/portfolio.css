@@ -16,7 +16,7 @@
     animation-name: pageTitle;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    animation-delay: 1s;
+    animation-delay: 0.25s;
 }
 
 @keyframes pageTitle {
@@ -41,7 +41,7 @@
     animation-name: card;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.50s;
 }
 
 @keyframes card {

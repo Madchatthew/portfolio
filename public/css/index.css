@@ -24,7 +24,8 @@ html {
     animation-name: name;
     animation-timing-function: ease-in;
     animation-fill-mode: forwards;
-    animation-duration: 2s;
+    animation-delay: 0.25s;
+    animation-duration: 1s;
 }
 
 @keyframes name {
@@ -41,8 +42,8 @@ html {
     opacity: 0;
     animation-name: subtitle;
     animation-timing-function: ease-in;
-    animation-duration: 2s;
-    animation-delay: 1s;
+    animation-duration: 1s;
+    animation-delay: 0.50s;
     animation-fill-mode: forwards;
 }
 
@@ -60,7 +61,7 @@ html {
     animation-timing-function: ease-in;
     animation-duration: 1s;
     animation-fill-mode: forwards;
-    animation-delay: 1.5s;
+    animation-delay: 0.75s;
 }
 
 @keyframes socialMedia {
