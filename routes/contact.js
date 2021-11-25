@@ -8,9 +8,10 @@ router.get('/', (req, res) => {
 
 router.post('/', async (req, res) => {
 
-    let emailName = req.body.contactForm.name;
-    let emailAddress = req.body.contactForm.email;
-    let emailMessage = req.body.contactForm.message;
+    const emailName = req.body.name;
+    const emailAddress = req.body.email;
+    const emailMessage = req.body.message;
+    const emailDetails = req.body.details;
 
     let transporter = nodemailer.createTransport({
         host: process.env.HOST,
@@ -29,7 +30,7 @@ router.post('/', async (req, res) => {
         text: `${ emailName } with email address ${ emailAddress } says: ${ emailMessage }`
     })
 
-    if(req.body.details != "") {
+    if(emailDetails != "") {
         res.render('contact/index', { layout: './layouts/contactLayout' });
     } else {
         transporter.sendMail(email, (error, info) => {
